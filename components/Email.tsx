@@ -22,29 +22,29 @@ const Email = () => {
   };
 
   return (
-    <Box>
-      <>
-        <Input
-          placeholder="email address"
-          onChange={(e) => validator(e.target.value)}
-          sx={{
-            border: `1px solid  ${isValid ? "navy" : "red"}`,
-            borderRadius: "2rem",
-            height: "3rem",
-            width: "26.5rem",
-            color: "navy",
-            padding: "1.25rem",
-          }}
-        />
-        {isValid ? null : (
-          <Typography
-            sx={{ color: "red", fontSize: ".75rem", marginLeft: "1.75rem" }}
-          >
-            Please enter a valid email address.
-          </Typography>
-        )}
-      </>
+    <Box className="media">
+      <Input
+        placeholder="email address"
+        onChange={(e) => validator(e.target.value)}
+        sx={{
+          border: `1px solid  ${isValid ? "navy" : "red"}`,
+          borderRadius: "2rem",
+          height: "3rem",
+          width: "26.5rem",
+          color: "navy",
+          padding: "1.25rem",
+        }}
+      />
+      {isValid ? null : (
+        <Typography
+          sx={{ color: "red", fontSize: ".75rem", marginLeft: "1.75rem" }}
+        >
+          Please enter a valid email address.
+        </Typography>
+      )}
+
       <Button
+        className="test"
         variant="outlined"
         sx={{
           border: `1px solid navy`,

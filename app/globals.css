@@ -1,0 +1,20 @@
+@media only screen and (max-width: 600px) {
+  .media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .test {
+    width: 26.5rem;
+    margin-top: 1.25rem;
+    margin-left: 0;
+  }
+
+  .header {
+    font-size: larger;
+  }
+
+  .subscribe {
+    font-size: small;
+  }
+}

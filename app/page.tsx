@@ -17,6 +17,7 @@ const Home = () => {
       <Typography variant="h1"> Elevation Experience Logo</Typography>
 
       <Typography
+        className="header"
         variant="h3"
         sx={{
           color: "lightGrey",
@@ -28,7 +29,10 @@ const Home = () => {
         We are launching
         <span style={{ fontWeight: "800", color: "navy" }}> soon!</span>
       </Typography>
-      <Typography sx={{ fontSize: "1.25rem", marginBottom: "2.5rem" }}>
+      <Typography
+        className="subscribe"
+        sx={{ fontSize: "1.25rem", marginBottom: "2.5rem" }}
+      >
         Subscribe and get notified
       </Typography>
       <Email />
